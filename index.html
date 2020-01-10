@@ -16,21 +16,22 @@
 <body>
     <div class="container demo">
 
-	
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-    
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                    <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <i class="more-less glyphicon glyphicon-chevron-down"></i>
-                            Category 1
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="panel-body">
-
+        <div class="container"> 
+            <div class="row">
+              <div  class="col-sm-12">
+                  <div class="col-xs-3 tabpnl">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs tabs-left sideways" id="navTabs">
+                      <li class="active allst"><a href="#all-v" data-toggle="tab">Category 1</a></li>
+                      <li class="allst"><a href="#compatibility-v" data-toggle="tab">Category 2</a></li>
+                      <li class="allst"><a href="#installation-v" data-toggle="tab">Category 3</a></li>
+                      <li class="allst"><a href="#troubleshooting-v" data-toggle="tab">Category 4</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-xs-9 mybg">
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                      <div class="tab-pane active" id="all-v">
                         <div class="col-lg-12">
                             <div class="inr_cat">
                                 <div class="fltr1">
@@ -69,88 +70,57 @@
                                 </div>
                             </div>
                         </div>
-                       
-                    </div>
-                </div>
-            </div>
-    
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingTwo">
-                    <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <i class="more-less glyphicon glyphicon-chevron-down"></i>
-                            Category 2
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                    <div class="panel-body">
                         <div class="col-lg-12">
                             <div class="inr_cat">
                                 <div class="fltr1">
                                     <div class="row">
                                         <div class="col-lg-3">
-                                            <input type="checkbox" id="food-1" name="tags" class="food_type" value="Veg">
-                                            <label for="food-1">intern 1</label>
+                                            <div class="inrcheck">
+                                                <input type="checkbox" id="food-1" name="tags" class="food_type" value="Veg">
+                                                <label for="food-1">person 1</label>
+                                                
+                                            </div>
                                         </div>
                                         <div class="col-lg-3">
-                                            <input type="checkbox" id="food-1" name="tags" class="food_type" value="Veg">
-                                            <label for="food-1">intern 2</label>
+                                            <div class="inrcheck">
+                                                <input type="checkbox" id="food-2" name="tags" class="food_type" value="Veg">
+                                                <label for="food-2">Person 2</label>
+                                               
+                                            </div>
                                         </div>
                                         <div class="col-lg-3">
-                                            <input type="checkbox" id="food-1" name="tags" class="food_type" value="Veg">
-                                            <label for="food-1">intern 3</label>
+                                            <div class="inrcheck">
+                                                <input type="checkbox" id="food-3" name="tags" class="food_type" value="Veg">
+                                                <label for="food-3">Person 3</label>
+                                                
+                                            </div>
                                         </div>
+                                        <div class="col-lg-3">
+                                            <div class="inrcheck">
+                                                <input type="checkbox" id="food-4" name="tags" class="food_type" value="Veg">
+                                                <label for="food-4">Person 4</label>
+                                               
+                                            </div>
+                                        </div>
+                                      
                                     </div>                    
                                         
                                 </div>
                             </div>
                         </div>
+                      </div>
+                      <div class="tab-pane" id="compatibility-v">Compatibility Tab.</div>
+                      <div class="tab-pane" id="installation-v">Installation Tab.</div>
+                      <div class="tab-pane" id="troubleshooting-v">Troubleshooting Tab.</div>
+                      <div class="tab-pane" id="miscellaneous-v">Miscellaneous Tab.</div>
+                      <div class="tab-pane" id="login-v">Login Tab.</div>
+                      <div class="tab-pane" id="products-v">Products Tab.</div>
                     </div>
-                </div>
+                  </div>
+                  <div class="clearfix"></div>
             </div>
-    
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingThree">
-                    <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            <i class="more-less glyphicon glyphicon-chevron-down"></i>
-                            Category 3
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                    <div class="panel-body">
-                        <div class="col-lg-12">
-                            <div class="inr_cat">
-                                <div class="fltr1">
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <input type="checkbox" id="food-1" name="tags" class="food_type" value="Veg">
-                                            <label for="food-1">sponsor 1</label>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <input type="checkbox" id="food-1" name="tags" class="food_type" value="Veg">
-                                            <label for="food-1">sponsor 2</label>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <input type="checkbox" id="food-1" name="tags" class="food_type" value="Veg">
-                                            <label for="food-1">sponsor 3</label>
-                                        </div>
-                                    </div>                    
-                                        
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-    
-        </div><!-- panel-group -->
-        
-        <div class="butn_ad">
-            <button class="btnaddc">Continue <span><i class="fas fa-shopping-cart"></i></span></button>
-        </div>
+          </div>
         
     </div><!-- container -->
     

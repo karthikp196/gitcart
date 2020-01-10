@@ -1,198 +1,178 @@
-/*******************************
-* ACCORDION WITH TOGGLE ICONS
-* Does not work properly if "in" is added after "collapse".
-*******************************/
-.panel-group .panel {
-    border-radius: 0;
-    box-shadow: none;
-    border-color: #EEEEEE;
+.tabs-left, .tabs-right {
+  border-bottom: none;
+  padding-top: 2px;
+}
+.tabs-left {
+/*   border-right: 1px solid #ddd; */
+}
+.tabs-left>li, .tabs-right>li {
+  float: none;
+  margin-bottom: 2px;
+}
+.tabs-left>li {
+  margin-right: -1px;
+}
+.tabs-left>li.active>a,
+.tabs-left>li.active>a:hover,
+.tabs-left>li.active>a:focus {
+  border-bottom-color: #324b72;
+  background: #324b72;
+  color: #fff;
+  border-radius:0px!important;
+/*   border-right-color: transparent; */
+}
+.tabs-left>li.active>a::after
+{
+  width:0px;
+}
+.tabs-left>li>a {
+/* border-radius: 4px 0 0 4px; */
+  margin-right: 0;
+  display:block;
+  border:none;
+  color:#324b72;
+}
+#navTabs a:hover{
+  border-bottom:1px solid #e7e7e7;
+  background:#fff;
+  color:black;
+}
+.questionPanel{
+  list-style:none;
+  padding-left:0px;
+}
+.questionPanel li{
+  padding:10px 25px;
+  background:#f9f9f9;
+  margin-bottom:10px;
+}
+.questionTitle{
+  padding-right:20px;
+  cursor:pointer;
+  font-size:16px;
+}
+.trigger{
+  font-size:14px;
+/*   position:absolute;
+  right:35px;
+  top:25px; */
+  color:#222;
+  transition:.5s;
+}
+.trigger span{
+  transition:.5s;
+  padding-top:15px;
+}
+.questionDescription{
+  display:none;
+}
+.triggerRotate{
+  -webkit-transform: rotate(44deg);
+-moz-transform: rotate(44deg);
+-o-transform: rotate(44deg);
+background:#fff;
 }
 
-.panel-default > .panel-heading {
-    padding: 0;
-    border-radius: 0;
-    color: #212121;
-    background-color: #FAFAFA;
-    border-color: #EEEEEE;
-}
-
-.panel-title {
-    font-size: 14px;
-}
-
-.panel-title > a {
-    display: block;
-    padding: 15px;
-    text-decoration: none;
-    background: #324b72;
-    color: white;
-    font-size: 16px;
-    font-family: 'Merriweather Sans', sans-serif;
-}
-
-.more-less {
-    float: right;
-    color: white;
-}
-
-.panel-default > .panel-heading + .panel-collapse > .panel-body {
-    border-top-color: #EEEEEE;
-}
-
-/* ----- v CAN BE DELETED v ----- */
-body {
-background-color: #F4F8FB;
-}
-
-.demo {
-padding-top: 60px;
-padding-bottom: 110px;
-}
-
-.demo-footer {
-position: fixed;
-bottom: 0;
-width: 100%;
-padding: 15px;
-background-color: #212121;
-text-align: center;
-}
-
-.demo-footer > a {
-text-decoration: none;
-font-weight: bold;
-font-size: 14px;
-color: #fff;
-}
-
-/* .fltr1 input[type=checkbox] {
-    display: none;
+.demo
+{
+  margin:50px auto;
 }
 
 .fltr1 input[type=checkbox] + label {
-    display: block;
-    margin: 4px;
-    cursor: pointer;
-    padding: 2px;
-    text-align: left;
-    font-size: 11px;
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+  color: #333;
+  font-weight: 600;
+  font-family: 'Public Sans', sans-serif;
 }
 
-label {
-    font-weight: 500;
-    margin-bottom: 3px;
+.fltr1 input[type=checkbox] {
+  display: none;
 }
 
-.fltr1 input[type=checkbox] + label:before {
-    content: "\2714";
-    border: 0.1em solid #cac3c3;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    padding-left: 0.2em;
-    padding-bottom: 0.3em;
-    margin-right: 1.0em;
-    vertical-align: bottom;
-    color: transparent;
-    transition: .2s;
-    font-size: 13px;
-} */
+.fltr1  input[type=checkbox] + label:before {
+  content: "\2714";
+  border: 0.1em solid #cac3c3;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 0.2em;
+  vertical-align: bottom;
+  color: transparent;
+  transition: .2s;
+}
 
+.fltr1 input[type=checkbox] + label:active:before {
+  transform: scale(0);
+}
 
-.fltr1 input[type=checkbox] + label {
-    display: block;
-    margin: 0.2em;
-    cursor: pointer;
-    padding: 0.2em;
-    color: #333;
-    font-weight: 600;
-    font-family: 'Public Sans', sans-serif;
-  }
-  
-  .fltr1 input[type=checkbox] {
-    display: none;
-  }
-  
-  .fltr1  input[type=checkbox] + label:before {
-    content: "\2714";
-    border: 0.1em solid #cac3c3;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    padding-left: 0.2em;
-    padding-bottom: 0.3em;
-    margin-right: 0.2em;
-    vertical-align: bottom;
-    color: transparent;
-    transition: .2s;
-  }
-  
-  .fltr1 input[type=checkbox] + label:active:before {
-    transform: scale(0);
-  }
-  
-  .fltr1 input[type=checkbox]:checked + label:before {
-    border-color: #fa4616;
-    color: #fa4616;
-  }
-  
-  .fltr1 input[type=checkbox]:disabled + label:before {
-    transform: scale(1);
-    border-color: #aaa;
-  }
-  
-  .fltr1 input[type=checkbox]:checked:disabled + label:before {
-    transform: scale(1);
-    background-color: #bfb;
-    border-color: #bfb;
-  }
+.fltr1 input[type=checkbox]:checked + label:before {
+  border-color: #fa4616;
+  color: #fa4616;
+}
 
-  .inr_cat
-  {
-   
-  }
-  
-  .inrcheck
-  {
-      padding:5px;
-      position: relative;
-  }
+.fltr1 input[type=checkbox]:disabled + label:before {
+  transform: scale(1);
+  border-color: #aaa;
+}
 
-  .inrcheck .categoryimg
-  {
-      width:50px;
-      height: auto;
-      position: absolute;
-      top:5px;
-      right:125px;
-  }
+.fltr1 input[type=checkbox]:checked:disabled + label:before {
+  transform: scale(1);
+  background-color: #bfb;
+  border-color: #bfb;
+}
 
-  .butn_ad
-  {
-    text-align: right;  
-  }
+.inr_cat
+{
+ 
+}
 
-  .btnaddc
-  {
-    color:#324b72;
-    background:white;
-    border:1px solid #324b72;
-    padding:5px 12px;
-    border-radius: 3px;
-    font-size: 16px;
-    font-family: 'Public Sans', sans-serif;
-    font-weight: 600;
-    outline:none;
-    transition:0.6s;
-  }
-  .btnaddc:hover
-  {
-    color:#fff;
-    background:#324b72;
-    border:1px solid #324b72;
-  }
+.inrcheck
+{
+    padding:5px;
+    position: relative;
+}
 
-  .btnaddc span i
-  {
-    margin-right: 5px;
-  }
+.inrcheck .categoryimg
+{
+    width:50px;
+    height: auto;
+    position: absolute;
+    top:5px;
+    right:125px;
+}
+
+.mybg
+{
+  background:white;
+}
+body
+{
+  background-color: #F4F8FB;
+}
+
+.tabpnl
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background:white;
+}
+
+.allst a
+{
+  position: relative;
+}
+
+.allst a::after
+{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  background: white;
+  width: 0px;
+  height: 41px;
+}

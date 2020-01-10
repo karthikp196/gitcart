@@ -1,11 +1,7 @@
-/*******************************
-* ACCORDION WITH TOGGLE ICONS
-*******************************/
-function toggleIcon(e) {
-    $(e.target)
-        .prev('.panel-heading')
-        .find(".more-less")
-        .toggleClass('glyphicon-plus glyphicon-minus');
-}
-$('.panel-group').on('hidden.bs.collapse', toggleIcon);
-$('.panel-group').on('shown.bs.collapse', toggleIcon);
+$(".trigger span").addClass("glyphicon glyphicon-plus");
+$(".questionContainer").on('click', function(e){
+  // console.log('hi');
+  $(this).find(".questionDescription").slideToggle("down");
+  $(this).find('.trigger span').toggleClass('glyphicon glyphicon-plus').toggleClass('glyphicon glyphicon-remove');
+    
+});
