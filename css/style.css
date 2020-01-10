@@ -34,9 +34,8 @@
   color:#324b72;
 }
 #navTabs a:hover{
-  border-bottom:1px solid #e7e7e7;
-  background:#fff;
-  color:black;
+  background: rgba(9,30,66,.04);
+  color: #0052CC;
 }
 .questionPanel{
   list-style:none;
@@ -149,7 +148,7 @@ background:#fff;
 
 .mybg
 {
-  background:white;
+  
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19); */
 }
 body
@@ -159,19 +158,37 @@ body
 
 .drpshadow1
 {
-  background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255);
     box-shadow: rgba(9, 30, 66, 0.08) 0px 0px 0px 1px, rgba(9, 30, 66, 0.08) 0px 2px 1px, rgba(9, 30, 66, 0.31) 0px 0px 20px -6px;
     color: rgb(9, 30, 66);
-   
     pointer-events: auto;
     border-radius: 3px;
-    outline: 0px;
+    outline: 0px; */
+}
+
+.mybg1
+{
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(9, 30, 66, 0.08) 0px 0px 0px 1px, rgba(9, 30, 66, 0.08) 0px 2px 1px, rgba(9, 30, 66, 0.31) 0px 0px 20px -6px;
+  color: rgb(9, 30, 66);
+  pointer-events: auto;
+  border-radius: 3px;
+  outline: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .tabpnl
 {
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-  background:white;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(9, 30, 66, 0.08) 0px 0px 0px 1px, rgba(9, 30, 66, 0.08) 0px 2px 1px, rgba(9, 30, 66, 0.31) 0px 0px 20px -6px;
+  color: rgb(9, 30, 66);
+  pointer-events: auto;
+  border-radius: 3px;
+  outline: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .allst a
