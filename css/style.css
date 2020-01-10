@@ -15,10 +15,11 @@
 .tabs-left>li.active>a,
 .tabs-left>li.active>a:hover,
 .tabs-left>li.active>a:focus {
-  border-bottom-color: #324b72;
+  /* border-bottom-color: #324b72; */
   background: #324b72;
   color: #fff;
-  border-radius:0px!important;
+  border-radius:3px!important;
+  
 /*   border-right-color: transparent; */
 }
 .tabs-left>li.active>a::after
@@ -149,15 +150,27 @@ background:#fff;
 .mybg
 {
   background:white;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19); */
 }
 body
 {
   background-color: #F4F8FB;
 }
 
+.drpshadow1
+{
+  background-color: rgb(255, 255, 255);
+    box-shadow: rgba(9, 30, 66, 0.08) 0px 0px 0px 1px, rgba(9, 30, 66, 0.08) 0px 2px 1px, rgba(9, 30, 66, 0.31) 0px 0px 20px -6px;
+    color: rgb(9, 30, 66);
+   
+    pointer-events: auto;
+    border-radius: 3px;
+    outline: 0px;
+}
+
 .tabpnl
 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   background:white;
 }
 
